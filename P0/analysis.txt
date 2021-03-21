@@ -1,0 +1,31 @@
+Task0.py
+
+Run time analysis
+
+O(1) for time complexity
+0(1) space complexity
+
+Task1.py
+
+O(1) time complexity for set construction
+O(n) for space complexity
+
+Task2.py
+
+O(1) time complexity for dictionary get and set and O(nlogn) for sorting 
+O(n) for space complexity
+
+Task3.py
+
+For part A
+O(1) time complexity for constructing and appending to set and O(nlogn) for sorting
+O(n) space complexity
+
+For part B
+O(1) time complexity for constructing total_calls list , O(n) for counting,how many calls are made to bangalore in the 'total_calls' list
+O(n) space complexity
+
+Task4.py
+
+O(1) time complexity for adding element in set and O(nlogn) for sorting in lexicographic order
+O(n) space complexity
