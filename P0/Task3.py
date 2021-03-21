@@ -46,7 +46,7 @@ for record in calls:
 
 print('The numbers called by people in Bangalore have codes:', end='\n' * 2)
 
-# in lexicographic order
+# sorting in lexicographic order
 for item in sorted(area_code):
     print(item)
 
@@ -68,7 +68,7 @@ total_calls = list()
 for record in calls:
     if record[0].startswith('(080)'):  # caller from bangalore
         if record[1].startswith('(080)'):  # calls made to bangalore
-            total_calls.append('080')  # quick way to identify 080 in the total calls
+            total_calls.append('080')  # quick way to identify 080 in the total calls list
         else:
             total_calls.append(record[1])
 

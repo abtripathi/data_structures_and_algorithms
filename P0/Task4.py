@@ -25,13 +25,14 @@ Print a message:
 The list of numbers should be print out one per line in lexicographic order with no duplicates.
 """
 
-## collect numbers which have only made outgoing calls
+# collect numbers which have only made outgoing calls
 callers = set()
 receivers = set()
 for record in calls:
     callers.add(record[0])
     receivers.add(record[1])
 
+# create a set for numbers who have either send or receive texts
 number_send_or_receive_texts = set()
 for record in texts:
     number_send_or_receive_texts.add(record[0])
@@ -39,7 +40,8 @@ for record in texts:
 
 only_callers = callers - receivers  # callers who have never received any calls
 
-possible_telemarketers = only_callers - number_send_or_receive_texts
+possible_telemarketers = only_callers - number_send_or_receive_texts # difference between only_callers and
+# number_send_or_receive_texts sets
 
 print("These numbers could be telemarketers: ", end='\n' * 2)
 for item in sorted(possible_telemarketers):

@@ -19,13 +19,15 @@ Print a message:
 "<telephone number> spent the longest time, <total time> seconds, on the phone during 
 September 2016.".
 """
-duration_dict = {}
+duration_dict = {} # dictionary to store total duration for any given number in the calls list
 for record in calls:
     duration_dict[record[0]] = duration_dict.get(record[0],0) + int(record[3])
     duration_dict[record[1]] = duration_dict.get(record[1],0) + int(record[3])
 
-phone_number_with_max_duration = sorted(duration_dict, key=lambda x:duration_dict[x], reverse=True)[0]
+phone_number_with_max_duration = sorted(duration_dict, key=lambda x:duration_dict[x], reverse=True)[0] # sorting
+# descending to get max value
 
+# print message
 print("{} spent the longest time, {} seconds,on the phone during September 2016. ".format(phone_number_with_max_duration,
                                                                                           duration_dict[phone_number_with_max_duration]))
 
