@@ -2,30 +2,65 @@ Task0.py
 
 Run time analysis
 
-O(1) for time complexity
-0(1) space complexity
+Getting a specific element from the list has O(1) complexity so worst case time complexity is O(1)
+
+O(1) space complexity
 
 Task1.py
 
-O(1) time complexity for set construction
+2 for loops each has O(n) time complexity
+within each for loop, addition of an element in a set is O(1) operation hence worst case time complexity for first for loop is O(n).Same for second loop 
+so total worst case will be O(n)+O(n) which is equal to O(2n) = O(n)
+
 O(n) for space complexity
 
 Task2.py
 
-O(1) time complexity for dictionary get and set and O(nlogn) for sorting 
+for loop has O(n).Adding an element in a dictionary is O(1) in average case and O(n) in worst case due to hash collisions however in programming language implementations, it is very rare to have O(n) 
+hence taking dictionary operation to be O(1), total worst case complexity of loop is O(n)
+
+max functon has worst case time complexity of O(n)
+
+so total worst case complexity is O(n)
+
 O(n) for space complexity
 
 Task3.py
 
 For part A
-O(1) time complexity for constructing and appending to set and O(nlogn) for sorting
+
+loop has O(n),first 'startswith'has O(1) worst case,find function has O(1),second startswith has O(1),slicing operation has O(k) and set operation has O(1).
+
+where n is input size,R is length of the first and second columns and k is slice size.Since R is constant of max length 13 and also n>>R>k hence
+total worst case complexity for a loop is O(n)
+
+sorted function has O(nlogn)
+
+since O(nlogn)>O(n)
+
+hence total worst case complexity is O(nlogn)
+
 O(n) space complexity
 
 For part B
-O(1) time complexity for constructing total_calls list , O(n) for counting,how many calls are made to bangalore in the 'total_calls' list
+going by the analysis for part-A, loop has a complexity of O(n)
+
+count function has complexity of O(n)
+
+hence total worst case complexity is O(n)
+
 O(n) space complexity
 
 Task4.py
 
-O(1) time complexity for adding element in set and O(nlogn) for sorting in lexicographic order
+loop has O(n) and set has O(1) so worst case for loop is O(n)
+second loop also has O(n) by the same logic
+set difference has O(n) where n is the size of first set 
+
+sorted function has O(nlogn)
+
+so total complexity is O(n)+O(n)+O(n)+O(nlogn)= O(n)+O(nlogn)
+
+since nlogn>n hence total worst case complexity is O(nlogn)
+
 O(n) space complexity

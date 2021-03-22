@@ -75,12 +75,4 @@ for record in calls:
 print("{:.2f} percent of call from fixed lines in Bangalore are calls to other fixed lines in Bangalore." \
       .format(total_calls.count('080') / len(total_calls) * 100))
 
-"""
-Run time analysis for part A
-O(1) time complexity for constructing and appending to set and O(nlogn) for sorting
-O(n) space complexity
 
-Run time analysis for part B
-O(1) time complexity for constructing total_calls list , O(n) for counting,how many calls are made to bangalore in the 'total_calls' list
-O(n) space complexity
-"""

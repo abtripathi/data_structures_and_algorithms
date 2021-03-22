@@ -23,9 +23,3 @@ Print messages:
 # print message
 print("First record of texts, {} texts {} at time {}".format(texts[0][0],texts[0][1],texts[0][2]))
 print("Last record of calls, {} calls {} at time {},lasting {} seconds".format(calls[-1][0],calls[-1][1],calls[-1][2],calls[-1][3]))
-
-"""
-Run time analysis
-O(1) for time complexity
-0(1) space complexity
-"""

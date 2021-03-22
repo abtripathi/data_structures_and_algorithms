@@ -31,9 +31,4 @@ for record in calls:
 # print message
 print("There are {} different telephone numbers in the records".format(len(diff_phone_numbers)))
 
-"""
-Run time analysis
-O(1) time complexity for set construction
-O(n) for space complexity
-"""
 
